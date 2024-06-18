@@ -1,32 +1,27 @@
-## Step 1: Initialize Git Repository
+### Step 1: Initialize Git
+Navigate to the directory where you want to keep the project and initialize git.
 
-First, initialize a git repository in the desired folder on your PC:
-
-```bash
 git init
-Step 2: Clone the Project
-Clone the project repository using the following command:
 
-bash
-Copy code
-git clone url_of_the_project
-Replace url_of_the_project with the actual URL of the project repository.
+### Step 2: Clone Repository
+Clone the project repository using the provided URL.
 
-Step 3: Set Up Python Environment
-Using Conda
-Create a Python environment using conda. In this example, the environment is named venv:
+git clone <url_of_the_project>
 
-bash
-Copy code
+### Step 3: Open VS code
+Open the cloned project directory in Visual Studio Code.
+
+### Step 4:  Create and Activate Python Environment:
+Create and activate a Python environment using conda. Replace venv with your preferred environment name.
+
 conda create -p venv python==3.10 -y
-Activate the environment:
-
-bash
-Copy code
 conda activate venv/
-Step 4: Install Necessary Libraries
-Install the required libraries listed in the requirements.txt file:
 
-bash
-Copy code
+### Step 5:  Install Required Libraries
+Install the necessary libraries from the requirements file.
+
 pip install -r requirements.txt
+
+### Step 6: Run the Project
+
+streamlit run app.py
