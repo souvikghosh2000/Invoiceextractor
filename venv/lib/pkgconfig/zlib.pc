@@ -1,0 +1,13 @@
+prefix=/mnt/d/WSL/Invoiceextractor/venv
+exec_prefix=/mnt/d/WSL/Invoiceextractor/venv
+libdir=/mnt/d/WSL/Invoiceextractor/venv/lib
+sharedlibdir=/mnt/d/WSL/Invoiceextractor/venv/lib
+includedir=/mnt/d/WSL/Invoiceextractor/venv/include
+
+Name: zlib
+Description: zlib compression library
+Version: 1.2.13
+
+Requires:
+Libs: -L${libdir} -L${sharedlibdir} -lz
+Cflags: -I${includedir}
